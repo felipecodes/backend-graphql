@@ -1,0 +1,48 @@
+{
+  "name": "backend-graphql",
+  "version": "1.0.0",
+  "description": "granphql server in node.js",
+  "main": "index.js",
+  "scripts": {
+    "babel-node": "babel-node --ignore='*.spec.js'",
+    "start": "nodemon --exec babel-node -- src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thefelpes/backend-graphql.git"
+  },
+  "keywords": [
+    "graphql",
+    "node.js",
+    "api"
+  ],
+  "author": {
+    "name": "Felipe Oliveira",
+    "email": "felipe.o.silva18@gmail.com",
+    "url": "https://github.com/thefelpes"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thefelpes/backend-graphql/issues"
+  },
+  "homepage": "https://github.com/thefelpes/backend-graphql#readme",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.12.0",
+    "express-graphql": "^0.6.12"
+  },
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "graphql": "^0.13.2",
+    "kcors": "^2.2.1",
+    "koa": "^2.5.1",
+    "koa-graphql": "^0.7.5",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0"
+  }
+}
