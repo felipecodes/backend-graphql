@@ -26,6 +26,7 @@ describe('BookType', () => {
           author
           description
           isbn
+          category
         }
       }
     `;

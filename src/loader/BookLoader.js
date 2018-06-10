@@ -13,6 +13,7 @@ type BookType = {
   description: string,
   author: string;
   isbn: string;
+  category: string;
 }
 
 export default class Book {
@@ -21,6 +22,7 @@ export default class Book {
   description: string;
   author: string;
   isbn: string;
+  category: string;
 
   constructor(data: BookType) {
     // eslint-disable-next-line no-underscore-dangle
@@ -29,6 +31,7 @@ export default class Book {
     this.description = data.description;
     this.author = data.author;
     this.isbn = data.isbn;
+    this.category = data.category;
   }
 }
 
