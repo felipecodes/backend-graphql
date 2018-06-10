@@ -17,6 +17,10 @@ const Schema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  category: {
+    type: String,
+    required: true,
+  },
 });
 
 export default mongoose.model('Book', Schema);

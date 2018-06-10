@@ -25,6 +25,10 @@ const BookType = new GraphQLObjectType({
       type: GraphQLString,
       resolve: book => book.isbn,
     },
+    category: {
+      type: GraphQLString,
+      resolve: book => book.category,
+    },
   }),
 });
 
