@@ -1,12 +1,25 @@
+const dotenv = require('dotenv').config();
+if (dotenv.error) throw dotenv.error;
+
+const debug = require('debug')('backend-graphql');
+debug('logging with debug enabled');
+
+import 'babel-polyfill';
 import { createServer } from 'http';
-import { config } from 'dotenv';
+import connectDatabase from './database';
 import app from './app';
 
-// load the .env variables
-config();
+(async () => {
+  try {
+    debug(`connecting to database: ${process.env.MONGO_URI}`);
+    const { host, port, name } = await connectDatabase();
+    debug(`connected to database: ${host}:${port}/${name}`);
+  } catch (error) {
+    debug(error);
+    process.exit(1);
+  }
 
-const server = createServer(app.callback());
-
-server.listen(process.env.GRAPHQL_PORT, () =>
-  // eslint-disable-next-line no-console
-  console.log(`Server now listening at: ${process.env.GRAPHQL_PORT}`));
+  createServer(app.callback())
+    .listen(process.env.GRAPHQL_PORT, () =>
+      debug(`server now listening at: ${process.env.GRAPHQL_PORT}`));
+})();
