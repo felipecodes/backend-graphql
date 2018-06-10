@@ -29,6 +29,12 @@ Install the JavaScript dependencies:
 npm install
 ```
 
+### Running the tests
+
+We are using the [`mongodb-memory-server`](https://github.com/nodkz/mongodb-memory-server) for testing. Thus, you need only run the following command:
+
+`npm run test`
+
 ### Running the app
 
 Whenever you want to run locally you have to have MongoDB running in the background. Example from mongodb documentation: [Runnig mongodb on ubuntu](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-ubuntu/#start-mongodb).
