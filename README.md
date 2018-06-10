@@ -31,7 +31,7 @@ npm install
 
 ### Running the tests
 
-We are using the [`mongodb-memory-server`](https://github.com/nodkz/mongodb-memory-server) for testing. Thus, you need only run the following command:
+We are using the [`mongodb-memory-server`](https://github.com/nodkz/mongodb-memory-server) on testing. Thus, you need only run the following command:
 
 `npm run test`
 
