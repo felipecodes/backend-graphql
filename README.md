@@ -10,13 +10,13 @@ git clone git@github.com:thefelpes/backend-graphql.git
 
 ### Instalation
 
-1. **Install Node.js**: See [the nvm documentation](https://github.com/creationix/nvm) for instructions on installing it with your OS.
+1. **Install Node.js (nvm is recommended)**: See [the nvm documentation](https://github.com/creationix/nvm) for instructions on installing it with your OS.
 2. **Install MongoDB**: See [the MongoDB documentation](https://docs.mongodb.com/manual/installation/) for instructions on installing it with your OS.
 
-Once you have Node.js and MongoDB installed locally, ensure that your Node.js version is `8.11.2`, and your npm is up-to-date.
+Once you have NVM and MongoDB installed locally, let's install the Node.js from `.nvmrc` file, and ensure that your npm is up-to-date.
 
 ```bash
-nvm use
+nvm install
 ```
 
 ```bash
