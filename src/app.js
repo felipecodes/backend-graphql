@@ -23,7 +23,6 @@ router
       schema,
       graphiql: process.env.NODE_ENV !== 'production',
       context: {
-        req,
         dataloaders,
       },
     };
