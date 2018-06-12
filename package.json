@@ -50,6 +50,7 @@
     "debug": "^3.1.0",
     "dotenv": "^5.0.1",
     "graphql": "^0.13.2",
+    "graphql-relay": "^0.5.5",
     "kcors": "^2.2.1",
     "koa": "^2.5.1",
     "koa-graphql": "^0.7.5",

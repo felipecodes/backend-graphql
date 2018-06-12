@@ -15,9 +15,9 @@ beforeEach(removeAllDocuments);
 
 afterAll(disconnectDatabase);
 
-describe('BookType', () => {
+describe('Query BookType', () => {
   it('should returns the book type', async () => {
-    const { id } = await createBook(fixture);
+    const { _id } = await createBook(fixture);
 
     const query = `
       query Book($id: ID!) {
@@ -32,7 +32,7 @@ describe('BookType', () => {
     `;
 
     const rootValue = {};
-    const variables = { id };
+    const variables = { id: _id };
     const context = getContext();
 
     const result = await graphql(schema, query, rootValue, context, variables);

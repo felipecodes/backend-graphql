@@ -9,7 +9,7 @@ const app = new Koa();
 const router = new Router();
 
 router
-  .all('/graphql', graphqlHTTP(async (req) => {
+  .all('/graphql', graphqlHTTP(async () => {
     // create the all dataloaders instances in each request
     const dataloaders = Object.keys(loaders).reduce(
       (accumulator, current) => ({
