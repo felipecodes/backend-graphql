@@ -9,6 +9,5 @@ export type Dataloaders = {
 };
 
 export type GraphQLContext = {
-  req: Object,
   dataloaders: Dataloaders,
 };

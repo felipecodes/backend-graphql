@@ -1,9 +1,11 @@
 import { GraphQLObjectType, GraphQLString } from 'graphql';
+import { globalIdField } from 'graphql-relay';
 
 const BookType = new GraphQLObjectType({
   name: 'Book',
   description: 'Book data',
   fields: () => ({
+    id: globalIdField('Book'),
     _id: {
       type: GraphQLString,
       // eslint-disable-next-line no-underscore-dangle
