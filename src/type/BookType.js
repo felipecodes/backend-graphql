@@ -1,9 +1,11 @@
 import { GraphQLObjectType, GraphQLString } from 'graphql';
 import { globalIdField } from 'graphql-relay';
+import { NodeInterface } from '../interface/NodeInterface';
 
 const BookType = new GraphQLObjectType({
   name: 'Book',
   description: 'Book data',
+  interfaces: () => [NodeInterface],
   fields: () => ({
     id: globalIdField('Book'),
     _id: {
