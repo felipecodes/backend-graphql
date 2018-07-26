@@ -46,15 +46,15 @@ Whenever you want to run locally you have to have MongoDB running in the backgro
 Whenever you want to run in **production mode** you have to have **build the app** and to after **run the app**:
 
 ```bash
-yarn build
+npm run build
 ```
 
 ```bash
-yarn start
+npm start
 ```
 
 Whenever you want to run in **development mode**:
 
 ```bash
-yarn dev
+npm run dev
 ```
